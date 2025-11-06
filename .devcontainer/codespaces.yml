@@ -17,5 +17,6 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
+      - ./ContextSensor:/shared
     restart: on-failure
     stop_grace_period: 2m
